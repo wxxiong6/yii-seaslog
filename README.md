@@ -12,7 +12,7 @@
 
 ## Installation
 ```shell
-composer require wxxiong6/yii-seaslog:"1.*"
+composer require wxxiong6/yii-seaslog:"1.0.0"
 ```
 
 ## Usage
