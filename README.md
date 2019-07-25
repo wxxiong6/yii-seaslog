@@ -11,6 +11,9 @@
 - ext-seaslog installed
 
 ## Installation
+```shell
+composer require wxxiong6/yii-seaslog
+```
 
 ## Usage
 
