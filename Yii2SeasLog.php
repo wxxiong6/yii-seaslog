@@ -15,8 +15,7 @@ use yii\log\Target;
 class Yii2SeasLog extends Target
 {
     public $logFile;
-    public $maxLogFiles;
-    public $maxFileSize;
+
 
     public $except = [];
 
@@ -31,15 +30,10 @@ class Yii2SeasLog extends Target
         } else {
             $this->logFile = Yii::getAlias($this->logFile);
         }
-        if ($this->maxLogFiles < 1) {
-            $this->maxLogFiles = 1;
-        }
-        if ($this->maxFileSize < 1) {
-            $this->maxFileSize = 1;
-        }
 
         $this->log = Yii::createObject('SeasLog');
-        $this->log->setBasePath(dirname($this->logFile));
+        $this->log->setBasePath($this->logFile);
+        $this->log->setLogger('logs');
     }
 
 
