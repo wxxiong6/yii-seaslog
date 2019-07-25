@@ -12,7 +12,7 @@
 
 ## Installation
 ```shell
-composer require wxxiong6/yii-seaslog
+composer require wxxiong6/yii-seaslog:"1.*"
 ```
 
 ## Usage
@@ -24,10 +24,9 @@ main.php
             'traceLevel' => YII_DEBUG ? 3 : 0,
             'targets' => [
                 'default' => [
-                    'logVars' => [],
                     'class' => 'wxxiong6\yii\seaslog\Yii2SeasLog',
                     'levels' => ['trace', 'info', 'error', 'warning'],
-                    'logFile' => 'backend/runtime/logs/',
+                    'logFile' => 'backend/runtime/',
                     'logVars' => [],
                 ],
             ],
