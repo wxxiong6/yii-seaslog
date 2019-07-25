@@ -1,0 +1,26 @@
+{
+    "name": "wxxiong6/yii-seaslog",
+    "description": "Yii2日志模块使用Seaslog",
+   "keywords": [
+    "seaslog",
+    "yii-seaslog",
+    "yii2-seaslog"
+  ],
+    "minimum-stability": "stable",
+    "authors": [
+        {
+            "name": "xwx",
+            "email": "wxxiong6@gmail.com"
+        }
+    ],
+    "require": {
+        
+        "php": ">=5.4"
+    },
+     "license": "MIT",
+     "autoload": {
+            "psr-4": {
+                "wxxiong6\\yii\\seaslog\\": ""
+            }
+        }
+}
